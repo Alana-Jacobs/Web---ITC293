@@ -1,0 +1,735 @@
+/*	portfolio.css
+	These styles control the overall page appearance used
+	across the entire website.
+	Name: Alana Jacobs
+	Student ID: 11820942
+    Date: 17th May 2026*/
+
+/* GLOBAL PAGE STYLES */
+body {
+	background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #1f2933;
+    font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centres the website on the page */
+#wrapper {
+    width: 90%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* HEADER STYLES */
+header {
+    background: linear-gradient(to right, #021526, #03346E);
+    padding: 30px;
+}
+
+.site-header,
+.company-header {
+    border-radius: 18px 18px 0 0;
+}
+
+.site-header {
+    height: 160px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	color: white;
+}
+
+.company-header {
+    height: 160px;
+	width: 100%;
+    background-image: url("../images/matterflow.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 70px;
+    height: auto;
+}
+
+/* HEADING STYLES */
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2b2b2b;
+    margin-bottom: 10px;
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 30px;
+	background: #faf7f2;
+}
+
+/* TEXT ALIGNMENT */
+.left-text {
+    text-align: left;
+}
+
+.centre-text {
+    text-align: center;
+}
+
+.right-text {
+    text-align: right;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+/* HOME PAGE STYLES */
+#intro {
+    font-style: italic;
+    font-size: 1.35em;
+    color: #2b2b2b;
+    letter-spacing: 0.4px;
+}
+
+.welcome-message {
+    letter-spacing: 0.6px;
+}
+
+/* NAVIGATION STYLES */
+nav {
+    background: #faf7f2;
+    padding: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2b2b2b;
+    background-color: #ffffff;
+	border: 1px solid #d8d2ca;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    text-decoration: none;
+
+    transform: translateY(-2px);
+}
+
+/* BOX STYLES */
+.section-box {
+    background-color: #ffffff;
+    border: 1px solid #eee7dd;
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 28px;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.section-box h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.section-box h3 {
+    color: #2f5d8c;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+/* LIST STYLES */
+.about-list {
+    max-width: 850px;
+    margin: 0 auto 20px auto;
+    padding-left: 20px;
+    text-align: left;
+    line-height: 1.6;
+    list-style-type: square;
+}
+
+ol.about-list {
+    list-style-type: upper-roman;
+}
+
+.about-list li {
+    margin-bottom: 10px;
+}
+
+/* Spinning logo animation on home page */
+.spinning-logo {
+    display: block;
+    width: 120px;
+    margin: 30px auto;
+    animation: spin 3s ease-out 1;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* NARROW CONTENT AREAS */
+.content-narrow {
+    width: 60%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+/* ABOUT PAGE STYLES */
+.two-column {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.image-content {
+    width: 40%;
+    text-align: center;
+}
+
+.profile-image {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.family-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* RESUME AND WEB SKILLS PAGE STYLES */
+.skills-grid {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-card {
+    flex: 1 1 320px;
+    max-width: 480px;
+    background-color: #ffffff;
+    border: 1px solid #e7e2da;
+    border-radius: 14px;
+    padding: 22px;
+    transition: all 0.3s ease;
+}
+
+.skills-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.skills-card h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.strike-text {
+    text-decoration: line-through;
+}
+
+
+/* TABLE STYLES */
+.experience-table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.experience-table th,
+.experience-table td {
+    border: 1px solid #d9d1c7;
+    padding: 10px;
+    text-align: left;
+}
+
+.experience-table th {
+    background-color: #f4efe8;
+    color: #183153;
+}
+
+/* SKILLS LANDING PAGE CARDS */
+.skill-page-link {
+    text-decoration: none;
+    color: inherit;
+    flex: 1 1 45%;
+    max-width: 480px;
+}
+
+.skill-page-card {
+    background-color: #ffffff;
+    border: 1px solid #e7e2da;
+    border-radius: 14px;
+    padding: 40px 22px;
+    min-height: 140px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.skill-page-link:hover .skill-page-card {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.skill-page-card h2 {
+    margin: 0;
+}
+
+/* FOOTER STYLES */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.95em;
+    border-top: 1px solid #e7e2da;
+    background-color: #faf7f2;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+
+    #wrapper {
+        width: 95%;
+        margin: 10px auto;
+        border-radius: 12px;
+    }
+
+    .site-header,
+    .company-header {
+        height: 110px;
+        padding: 15px;
+    }
+
+    .company-header {
+        background-size: cover;
+        background-position: left center;
+    }
+
+    nav {
+        padding: 18px 10px;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 6px 4px;
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 8px 14px;
+        font-size: 0.9em;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .skills-grid,
+    .two-column,
+    .skills-layout {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .skills-sidebar {
+        width: 100%;
+    }
+
+    .skills-sidebar li {
+        padding: 14px 0;
+    }
+
+    .skills-detail {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .skills-image {
+        width: 100%;
+    }
+
+    .skills-card,
+    .section-box {
+        width: auto;
+        max-width: 100%;
+        padding: 22px;
+    }
+
+    .image-content {
+        width: 100%;
+    }
+
+    .content-narrow {
+        width: 100%;
+    }
+
+    .experience-table {
+        width: 100%;
+        font-size: 0.9em;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* PRINT FUNCTION */
+@media print {
+
+    nav,
+    .logo {
+        display: none;
+    }
+
+    header,
+    .site-header {
+        display: block;
+        padding: 0;
+        margin: 0 0 10px 0;
+        text-align: center;
+        page-break-after: avoid;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 18pt;
+    }
+
+    body,
+    header,
+    #wrapper,
+    .section-box {
+        background: none;
+        color: #000;
+    }
+
+    #wrapper,
+    .section-box {
+        box-shadow: none;
+        border: none;
+    }
+
+    #wrapper {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    body {
+        font-size: 14pt;
+        line-height: 1.4;
+    }
+
+    .section-box {
+        padding: 10px;
+        margin-bottom: 10px;
+        page-break-inside: avoid;
+    }
+
+    .content-narrow {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .about-list {
+        margin: 0;
+    }
+
+    h2,
+    h3 {
+        text-align: left;
+        margin-bottom: 6px;
+        page-break-after: avoid;
+    }
+
+    .experience-table {
+        width: 100%;
+        font-size: 12pt;
+    }
+
+    .experience-table th,
+    .experience-table td {
+        padding: 6px;
+        white-space: nowrap;
+    }
+
+    .strike-text {
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+	.company-header {
+    display: none;
+	}
+
+	.skills-layout {
+		display: block;
+	}
+
+	.skills-sidebar {
+		display: none;
+	}
+
+	.skills-detail {
+		max-width: 100%;
+	}
+
+	.skills-card {
+		box-shadow: none;
+		border: 1px solid #000;
+		margin-bottom: 12px;
+		page-break-inside: avoid;
+	}
+
+	.skills-image {
+		width: 100%;
+		text-align: center;
+	}
+
+	.skills-image img {
+		max-width: 450px;
+		box-shadow: none;
+	}
+
+	.image-caption {
+		display: none;
+	}
+
+	.form-button {
+		display: none;
+	}
+}
+
+/* COMMUNICATION SKILLS PAGE*/
+
+.split-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Right text section */
+.split-content {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.split-content h2 {
+    margin-top: 0;
+}
+
+.split-content p {
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.split-list {
+    padding-left: 20px;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+
+
+/* Skills page layout */
+.skills-layout {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+/* Left sidebar */
+.skills-sidebar {
+    width: 240px;
+}
+
+.skills-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-sidebar li {
+    padding: 18px 0;
+    border-bottom: 1px solid #ddd;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.skills-sidebar li:hover {
+    color: #03346E;
+    padding-left: 10px;
+}
+
+/* Right content */
+.skills-content {
+    flex: 1;
+}
+
+/* Right image */
+.skills-image {
+    width: 500px;
+	text-align: center;
+    margin-top: 20px;
+}
+
+.image-caption {
+    font-size: 0.9em;
+    color: #555555;
+    margin-top: 10px;
+}
+
+.skills-image img {
+    width: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.skills-sidebar a {
+    text-decoration: none;
+    color: #1f2933;
+    display: block;
+}
+
+.skills-sidebar a:hover {
+    color: #03346E;
+    padding-left: 8px;
+}
+
+.skills-detail {
+    flex: 1;
+    max-width: 900px;
+}
+
+.skills-detail-image {
+    width: 100%;
+    max-height: 360px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-bottom: 35px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* FORM BUTTON */
+.form-button {
+    display: inline-block;
+    background-color: #2b2b2b;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #03346E;
+}
+
+/* FORM CONTAINER */
+.form-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fcfaf7;
+    border: 1px solid #e7e2da;
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* Form heading */
+.form-container h1 {
+    text-align: center;
+    color: #2b2b2b;
+}
+
+/* Labels */
+.form-container label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+/* Input fields */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d8d2ca;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif;
+}
+
+
